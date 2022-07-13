@@ -4,13 +4,13 @@ This is a minimal CRUD service exposing a couple of endpoints over REST,
 with a front-end based on Angular so you can play with it from your browser.
 
 While the code is surprisingly simple, under the hood this is using:
-- RESTEasy to expose the REST endpoints
-- Hibernate ORM with Panache to perform the CRUD operations on the database
-- A PostgreSQL database; see below to run one via Docker
-- ArC, the CDI inspired dependency injection tool with zero overhead
-- The high performance Agroal connection pool
-- Infinispan based caching
-- All safely coordinated by the Narayana Transaction Manager
+ - RESTEasy to expose the REST endpoints
+ - Hibernate ORM with Panache to perform the CRUD operations on the database
+ - A PostgreSQL database; see below to run one via Docker
+ - ArC, the CDI inspired dependency injection tool with zero overhead
+ - The high performance Agroal connection pool
+ - Infinispan based caching
+ - All safely coordinated by the Narayana Transaction Manager
 
 ## Requirements
 
@@ -112,7 +112,7 @@ Have fun, and join the team of contributors!
 This section provides extra information for running both the database and the demo on Kubernetes.
 As well as running the DB on Kubernetes, a service needs to be exposed for the demo to connect to the DB.
 
-Then, rebuild demo docker image with a system property that points to the DB.
+Then, rebuild demo docker image with a system property that points to the DB. 
 
 ```bash
 -Dquarkus.datasource.jdbc.url=jdbc:postgresql://<DB_SERVICE_NAME>/quarkus_test
