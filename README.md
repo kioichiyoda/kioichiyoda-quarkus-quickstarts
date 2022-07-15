@@ -1,2 +1,1 @@
 # kioichiyoda-quarkus-quickstarts
-# 
